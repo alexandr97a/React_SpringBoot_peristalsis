@@ -1,0 +1,26 @@
+spring:
+  devtools:
+    livereload:
+      enabled: true
+
+  mvc:
+    view:
+      prefix: /jsp/
+      suffix: .jsp
+---
+server:
+  port: 8080
+  #httpport: 80
+
+  tomcat:
+    uri-encoding: UTF-8
+  servlet:
+    session:
+      timeout: 3600s
+      cookie:
+        name: JSESSIONIDBSS
+
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
